@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "rootDir": ".",
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "allowJs": true,
+    "checkJs": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "lib": [
+      "dom",
+      "esnext",
+      "webworker"
+    ],
+    "target": "es5",
+    "moduleResolution": "node",
+    "resolveJsonModule": true
+  },
+  "include": [
+    "typings.d.ts",
+    "src/**/*.ts"
+  ]
+}
