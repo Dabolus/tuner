@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Tuner</title>
+    <meta name="generator" content="Tuner">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A web based tuner.">
+
+    <base href="/">
+
+    <%- include fragments/icons -%>
+    <%- include fragments/critical-css -%>
+    <%- include fragments/critical-js -%>
+  </head>
+  <body>
+    <section id="loading">
+      <h3 id="info-message">…</h3>
+      <div id="actions">
+        <div id="equalizer-loader">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <button id="start" hidden>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              d="M10 16.5l6-4.5-6-4.5v9zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/>
+          </svg>
+        </button>
+      </div>
+      <button id="info">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <rect x="11" y="7" width="2" height="2"/>
+          <rect x="11" y="11" width="2" height="6"/>
+          <path d="M12,2C6.48,2,2,6.48,2,12c0,5.52,4.48,10,10,10s10-4.48,10-10C22,6.48,17.52,2,12,2z M12,20c-4.41,0-8-3.59-8-8 c0-4.41,3.59-8,8-8s8,3.59,8,8C20,16.41,16.41,20,12,20z"/>
+        </svg>
+      </button>
+    </section>
+    <main>
+      <section id="freq-o-meter">
+        <h2 id="frequency">---.- Hz</h2>
+        <h1 id="note">--</h1>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 4" id="needle">
+          <rect width="16" height="4"></rect>
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 64">
+          <rect width="8" height="2" x="0" y="128"></rect>
+          <rect width="8" height="2" transform="rotate(30)"></rect>
+        </svg>
+      </section>
+    </main>
+  </body>
+</html>
